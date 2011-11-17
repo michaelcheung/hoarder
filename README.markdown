@@ -4,6 +4,10 @@ _For those who can't let go..._
 
 Hoarder is a utility for pushing your files to cloud storage. Just specify the absolute path of a directory of files you want to store and Hoarder will push all of its non hidden contents to the cloud. Hoarder will outright replace any files with the same name in your cloud storage container (bucket?).
 
+## Requirements
+
+* Ruby 1.9.2
+
 ## Installation
 
     gem install hoarder
