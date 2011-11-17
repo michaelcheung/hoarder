@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Michael Cheung"]
   s.email       = ["mncheu@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "http://github.com/michaelcheung/hoarder"
   s.summary     = %q{For those who can't let go of their files.}
   s.description = %q{A utility to push static files to cloud storage.}
 
