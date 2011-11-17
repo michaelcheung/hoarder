@@ -2,7 +2,7 @@
 
 _For those who can't let go..._
 
-Hoarder is a utility for pushing your files to cloud storage. Just specify the absolute path of a directory of files you want to store and Hoarder will push all of its contents to the cloud. Hoarder will outright replace any files with the same name in your cloud storage container (bucket?).
+Hoarder is a utility for pushing your files to cloud storage. Just specify the absolute path of a directory of files you want to store and Hoarder will push all of its non hidden contents to the cloud. Hoarder will outright replace any files with the same name in your cloud storage container (bucket?).
 
 ## Installation
 
@@ -26,5 +26,6 @@ Then from your command line simply run:
 ## To Do
 
 * Add support for Amazon S3
+* Add option to include hidden files
 * Make uploading a little smarter
 * More specs
