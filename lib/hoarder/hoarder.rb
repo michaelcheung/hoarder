@@ -26,7 +26,7 @@ module Hoarder
                 :content_type => 'application/directory',
                 :public => @storage.public
               )
-              self.send "upload_files", "#{path}/#{File.basename(f)}"
+              self.send "hoard", "#{path}/#{File.basename(f)}"
             else
               unless File.basename(f) == "hoarder.yml"
                 puts "Creating file #{File.basename(f)}"
@@ -38,7 +38,7 @@ module Hoarder
               end
             end
           rescue
-            puts "Error creating file #{File.basename(f)}"
+            puts "Error creating file #{file_name(f, path)}"
           end
         end
       end
