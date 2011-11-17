@@ -1,0 +1,14 @@
+#!/user/bin/env ruby
+require 'hoarder'
+
+begin
+  s = Hoarder::Storage.new(ARGV[0])
+  Hoarder::Hoarder.new(s).hoard(s.absolute_path)
+  Kernel.exit 1
+rescue SystemExit => e
+  Kernel.exit(e.status)
+rescue Exception => e
+  STDERR.puts("#{e.message} (#{e.class})")
+  STDERR.puts(e.backtrace.join("\n"))
+  Kernel.exit 1
+end
